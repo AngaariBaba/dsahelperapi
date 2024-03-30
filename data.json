@@ -1,0 +1,280 @@
+[
+    {
+        "id": 700005,
+        "problem_name": "Reverse a linked list",
+        "problem_type": 1,
+        "problem_type_text": "Function",
+        "publish": 1,
+        "publish_date": "2017-08-22 15:28:42",
+        "slug": "reverse-a-linked-list",
+        "problem_level": 0,
+        "problem_level_text": "Easy",
+        "difficulty": "Easy",
+        "marks": 2,
+        "is_sample_input_modified": 1,
+        "custom_input_format": "<p><span style=\"font-size: 18px;\">The custom input should contain only two line. The first line contains one integer <strong>N</strong><strong>&nbsp;.</strong><strong>&nbsp;</strong>The second line contains <strong>&nbsp;</strong><strong>N&nbsp;</strong>space separated integers denoting the&nbsp;<strong>value </strong>of the&nbsp;linked list.&nbsp;</span></p>\n<p><span style=\"font-size: 18px;\"><strong>Example:</strong></span></p>\n<pre><span style=\"font-size: 18px;\">6\n1 2 3 4 5 6</span></pre>",
+        "multiple_testcase": 1,
+        "content_type": 1,
+        "visibility_type": 1,
+        "visibility_text": "public",
+        "is_contest_problem": 0,
+        "contest_slug": null,
+        "can_add_interview_link": false,
+        "can_edit_all_submissions_link": true,
+        "has_all_submissions_button": false,
+        "all_submissions": 284084,
+        "accuracy": "73.11%",
+        "is_user_login": 1,
+        "is_private_tag_visible": false,
+        "related_courses": {
+            "fork-cpp": "Fork CPP Programming - Self Paced",
+            "Data-Structures-With-Python": "Data Structures & Algorithms in Python - Self Paced",
+            "c-Programming-basic-to-advanced": "Master C Programming with Data Structures",
+            "school-guide-course": "School Guide: Learning Roadmap For Young Geeks",
+            "dsa-interview-preparation-classroom": "DSA for Interview Preparation",
+            "interviewe-101-data-structures-algorithm-system-design": "Tech Interview 101 - From DSA to System Design for Working Professionals",
+            "dsa-self-paced": "Data Structures and Algorithms - Self Paced",
+            "data-structures-and-algorithms-in-javascript": "Data Structures & Algorithms in JavaScript - Self Paced",
+            "complete-interview-preparation": "Complete Interview Preparation",
+            "dsa-to-development-coding-guide": "DSA to Development: A Complete Guide",
+            "gate-ds-and-ai": "GATE Data Science and Artificial Intelligence 2025"
+        },
+        "tags": {
+            "company_tags": [
+                "Paytm",
+                "VMWare",
+                "Zoho",
+                "Accolite",
+                "Amazon",
+                "Microsoft",
+                "Samsung",
+                "Snapdeal",
+                "D-E-Shaw",
+                "MakeMyTrip",
+                "Teradata",
+                "Walmart",
+                "Goldman Sachs",
+                "Intuit",
+                "Adobe",
+                "SAP Labs",
+                "Tejas Network",
+                "Cisco",
+                "Qualcomm",
+                "Cognizant",
+                "Mahindra Comviva",
+                "IgniteWorld"
+            ],
+            "topic_tags": [
+                "Linked List",
+                "Data Structures"
+            ]
+        },
+        "problem_question": "<p><span style=\"font-size: 18px;\">Given a linked list of <strong>N </strong>nodes. The task is to reverse this list.</span></p>\n<p><strong><span style=\"font-size: 18px;\">Example 1:</span></strong></p>\n<pre><strong><span style=\"font-size: 18px;\">Input:\n</span></strong><span style=\"font-size: 18px;\">LinkedList: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6\n<strong>Output: </strong>6 5 4 3 2 1<strong>\nExplanation: </strong>After reversing the list, \nelements are 6-&gt;5-&gt;4-&gt;3-&gt;2-&gt;1.</span>\n</pre>\n<p><strong><span style=\"font-size: 18px;\">Example 2:</span></strong></p>\n<pre><strong><span style=\"font-size: 18px;\">Input:\n</span></strong><span style=\"font-size: 18px;\">LinkedList: 2-&gt;7-&gt;8-&gt;9-&gt;10\n<strong>Output: </strong>10 9 8 7 2<strong>\nExplanation: </strong>After reversing the list,\nelements are&nbsp;10-&gt;9-&gt;8-&gt;7-&gt;2.</span></pre>\n<p><span style=\"font-size: 18px;\"><strong>Your&nbsp;Task:</strong><br />The task is to complete the function <strong>reverseList</strong>() with&nbsp;head reference as the only argument and should return new head after reversing the list.</span></p>\n<p><span style=\"font-size: 18px;\"><strong>Expected Time Complexity:&nbsp;</strong>O(N).<br /><strong>Expected Auxiliary Space:&nbsp;</strong>O(1).</span></p>\n<p><span style=\"font-size: 18px;\"><strong>Constraints:</strong><br />1 &lt;= N &lt;= 10<sup>4</sup></span></p>\n<p>&nbsp;</p>",
+        "contributor": "Amit Khandelwal, Harshit Sidhwa",
+        "test_cases": "6\r\n1 2 3 4 5 6",
+        "article_existence": 1,
+        "can_edit_history": false,
+        "can_edit_problem": false,
+        "can_edit_problem_read_only": false,
+        "author": "support3",
+        "has_problem_solutions": true,
+        "has_hints": true,
+        "has_editorial": true,
+        "track": "",
+        "batch": "",
+        "has_doubt_assistance": false,
+        "extra": {
+            "problem_languages": {
+                "c": "C (gcc 5.4)",
+                "cpp": "C++ (g++ 5.4)",
+                "java": "Java (1.8)",
+                "python3": "Python3",
+                "javascript": "Javascript (Node v12.19.0)",
+                "csharp": "C#"
+            },
+            "default_lang": "cpp",
+            "default_code": "#include\nusing namespace std;\nint main()\n {\n\t//code\n\treturn 0;\n}",
+            "initial_user_func": {
+                "c": {
+                    "initial_code": "//Initial Template for C\r\n#include<stdio.h>\r\n#include<stdlib.h>\r\n\r\nstruct Node\r\n{\r\n    int data;\r\n    struct Node *next;\r\n    \r\n}*start;\r\n\r\nvoid insert();\r\nvoid display(struct Node *head);\r\n//Position this line where user code will be pasted.\r\n\r\nint main()\r\n{\r\n    int t;\r\n    scanf(\"%d\",&t);\r\n    while(t--)\r\n    {\r\n      start=NULL;\r\n      insert();\r\n      start = reverseList(start);\r\n      display(start);\r\n      printf(\"\\n\");\r\n    }\r\n    return 0;\r\n\r\n}\r\n\r\n\r\n void insert()\r\n {\r\n     int n,value,i;\r\n     scanf(\"%d\",&n);\r\n     struct Node *temp;\r\n     for(i=0;i<n;i++)\r\n     {\r\n         scanf(\"%d\",&value);\r\n         if(i==0)\r\n         {\r\n              start=(struct Node *) malloc( sizeof(struct Node) );\r\n              start->data=value;\r\n              start->next=NULL;\r\n              temp=start;\r\n              continue;\r\n         }\r\n         else\r\n         {\r\n             temp->next= (struct Node *) malloc( sizeof(struct Node) );\r\n             temp=temp->next;\r\n             temp->data=value;\r\n             temp->next=NULL;\r\n         }\r\n     }\r\n }\r\n \r\n void display(struct Node *head)\r\n{\r\n   while(head!=NULL)\r\n  {\r\n   printf(\"%d \",head->data);\r\n    head=head->next;\r\n  }\r\n}\r\n\r\n\r\n\r\n\r\n",
+                    "user_code": "//User function Template for C\r\n\r\nstruct Node* reverseList(struct Node *head)\r\n    {\r\n        \r\n    }",
+                    "created_at_timestamp": 1619166019,
+                    "updated_at_timestamp": 1693461487
+                },
+                "cpp": {
+                    "initial_code": "//Initial Template for C++// C program to find n'th Node in linked list\r\n#include <stdio.h>\r\n#include <stdlib.h>\r\n#include<iostream>\r\nusing namespace std;\r\n\r\n/* Link list Node */\r\nstruct Node {\r\n    int data;\r\n    struct Node *next;\r\n    Node(int x)\r\n    {\r\n        data = x;\r\n        next = NULL;\r\n    }\r\n};\r\n\r\n\r\n//Position this line where user code will be pasted.\r\n\r\nvoid printList(struct Node *head)\r\n{\r\n    struct Node *temp = head;\r\n    while (temp != NULL)\r\n    {\r\n       printf(\"%d \", temp->data);\r\n       temp  = temp->next;\r\n    }\r\n}\r\n\r\n/* Driver program to test above function*/\r\nint main()\r\n{\r\n    int T,n,l,firstdata;\r\n    cin>>T;\r\n\r\n    while(T--)\r\n    {\r\n        struct Node *head = NULL,  *tail = NULL;\r\n\r\n        cin>>n;\r\n        \r\n        if(n!=0)\r\n        {\r\n            cin>>firstdata;\r\n            head = new Node(firstdata);\r\n            tail = head;\r\n        }\r\n        \r\n        for (int i=1; i<n; i++)\r\n        {\r\n            cin>>l;\r\n            tail->next = new Node(l);\r\n            tail = tail->next;\r\n        }\r\n        \r\n        Solution ob;\r\n        head = ob. reverseList(head);\r\n        \r\n        printList(head);\r\n        cout << endl;\r\n    }\r\n    return 0;\r\n}\r\n\r\n",
+                    "user_code": "/* Linked List Node structure:\r\n\r\nstruct Node\r\n{\r\n    int data;\r\n    struct Node *next;\r\n}\r\n\r\n*/\r\n\r\nclass Solution\r\n{\r\n    public:\r\n    //Function to reverse a linked list.\r\n    struct Node* reverseList(struct Node *head)\r\n    {\r\n        // code here\r\n        // return head of reversed list\r\n    }\r\n    \r\n};\r\n    \r\n",
+                    "created_at_timestamp": 1619166019,
+                    "updated_at_timestamp": 1695803732
+                },
+                "java": {
+                    "initial_code": "import java.util.*;\r\nimport java.io.*;\r\n\r\nclass Node{\r\n    int data;\r\n    Node next;\r\n    \r\n    Node(int x){\r\n        data = x;\r\n        next = null;\r\n    }\r\n    \r\n}\r\nclass GFG{\r\n\tstatic void printList(Node node) \r\n\t{ \r\n\t\twhile (node != null) \r\n\t\t{ \r\n\t\t\tSystem.out.print(node.data + \" \"); \r\n\t\t\tnode = node.next; \r\n\t\t} \r\n\t\tSystem.out.println(); \r\n\t}\r\n    public static void main(String args[]) throws IOException { \r\n        \r\n        Scanner sc = new Scanner(System.in);\r\n        int t = sc.nextInt();\r\n        \r\n        while(t > 0){\r\n        \r\n        \tint n = sc.nextInt();\r\n        \r\n            Node head = new Node(sc.nextInt());\r\n            Node tail = head;\r\n        \r\n            for(int i=0; i<n-1; i++)\r\n            {\r\n                tail.next = new Node(sc.nextInt());\r\n                tail = tail.next;\r\n            }\r\n        \r\n            Solution ob = new Solution();\r\n            head = ob.reverseList(head);\r\n            printList(head); \r\n            t--;\r\n        }\r\n    } \r\n} \r\n   ",
+                    "user_code": "//function Template for Java\r\n\r\n/* linked list node class:\r\n\r\nclass Node {\r\n    int data;\r\n    Node next;\r\n    Node(int value) {\r\n        this.value = value;\r\n    }\r\n}\r\n\r\n*/\r\n\r\nclass Solution\r\n{\r\n    //Function to reverse a linked list.\r\n    Node reverseList(Node head)\r\n    {\r\n        // code here\r\n    }\r\n}\r\n",
+                    "created_at_timestamp": 1619166019,
+                    "updated_at_timestamp": 1693461487
+                },
+                "python3": {
+                    "initial_code": "# Node Class    \r\nclass Node:\r\n    def __init__(self, val):\r\n        self.data = val\r\n        self.next = None\r\n\r\n# Linked List Class\r\nclass Linked_List:\r\n    def __init__(self):\r\n        self.head = None\r\n        self.tail = None\r\n\r\n    def insert(self, val):\r\n        if self.head is None:\r\n            self.head = Node(val)\r\n            self.tail = self.head\r\n        else:\r\n            self.tail.next = Node(val)\r\n            self.tail = self.tail.next\r\n\r\ndef printList(head):\r\n    tmp = head\r\n    while tmp:\r\n        print(tmp.data, end=' ')\r\n        tmp=tmp.next\r\n    print()\r\n\r\nif __name__=='__main__':\r\n    for i in range(int(input())):\r\n        n = int(input())\r\n        arr = [int(x) for x in input().split()]\r\n        \r\n        lis = Linked_List()\r\n        for i in arr:\r\n            lis.insert(i)\r\n        \r\n        newHead = Solution().reverseList(lis.head)\r\n        printList(newHead)\r\n",
+                    "user_code": "#function Template for python3\r\n\r\n\"\"\"\r\n# Node Class\r\n\r\nclass node:\r\n    def __init__(self, val):\r\n        self.data = val\r\n        self.next = None\r\n\r\n\"\"\"\r\n\r\nclass Solution:\r\n    #Function to reverse a linked list.\r\n    def reverseList(self, head):\r\n        # Code here\r\n\r\n",
+                    "created_at_timestamp": 1619166019,
+                    "updated_at_timestamp": 1693461487
+                },
+                "javascript": {
+                    "initial_code": "//Initial Template for javascript\r\n'use strict';\r\n\r\nprocess.stdin.resume();\r\nprocess.stdin.setEncoding('utf-8');\r\n\r\nlet inputString = '';\r\nlet currentLine = 0;\r\n\r\nprocess.stdin.on('data', inputStdin => {\r\n    inputString += inputStdin;\r\n});\r\n\r\nprocess.stdin.on('end', _ => {\r\n    inputString = inputString.trim().split('\\n').map(string => {\r\n        return string.trim();\r\n    });\r\n    \r\n    main();    \r\n});\r\n\r\nfunction readLine() {\r\n    return inputString[currentLine++];\r\n}\r\n\r\nclass Node{\r\n    constructor(data){\r\n        this.data = data;\r\n        this.next = null;\r\n    }\r\n}\r\n\r\nfunction printlist(head){\r\n    let current = head; \r\n    let s='';\r\n    while (current !== null)\r\n    {\r\n        s+=current.data+\" \";\r\n        current = current.next;\r\n    }\r\n    console.log(s);\r\n}\r\n\r\nfunction main() {\r\n    let t = parseInt(readLine());\r\n    let i = 0;\r\n    for(;i<t;i++)\r\n    {\r\n        let n = parseInt(readLine());\r\n        let input_ar1 = readLine().split(' ').map(x=>parseInt(x));\r\n        let head = new Node(input_ar1[0]);\r\n        let tail = head;\r\n        for(let i=1;i<n;i++){\r\n            tail.next = new Node(input_ar1[i]);\r\n            tail = tail.next;\r\n        }\r\n        let obj = new Solution();\r\n        head = obj.reverseList(head);\r\n        printlist(head);\r\n        \r\n    }\r\n}",
+                    "user_code": "//User function Template for javascript\r\n\r\n/**\r\n * @param {Node} head\r\n * @returns {Node}\r\n*/\r\n\r\n/*\r\nclass Node{\r\n    constructor(data){\r\n        this.data = data;\r\n        this.next = null;\r\n    }\r\n}\r\n*/\r\n\r\nclass Solution {\r\n    //Function to reverse a linked list.\r\n    reverseList(head)\r\n    {\r\n        //your code here\r\n    }\r\n    \r\n}",
+                    "created_at_timestamp": 1619166019,
+                    "updated_at_timestamp": 1693461487
+                },
+                "csharp": {
+                    "initial_code": "//Initial Template for C#\r\n\r\n\r\nusing System;\r\nusing System.Collections.Generic;\r\nusing System.Linq;\r\nusing System.Text;\r\nusing System.Threading.Tasks;\r\nusing DriverCode;\r\n\r\nnamespace DriverCode\r\n{\r\n  \r\n\r\n    public class GFG\r\n    {\r\n        public static void PrintList( Node head){\r\n            while(head!=null){\r\n                Console.Write(head.data+\" \");\r\n                head = head.next;\r\n            }\r\n            Console.Write(\"\\n\");\r\n        }\r\n        static void Main(string[] args)\r\n        {\r\n            int testcases;// Taking testcase as input\r\n            testcases = Convert.ToInt32(Console.ReadLine());\r\n            while (testcases-- > 0)// Looping through all testcases\r\n            {\r\n                string[] element = Console.ReadLine().Split(\" \");\r\n                int n = Convert.ToInt32(element[0]);\r\n                string elements = Console.ReadLine().Trim();\r\n                string[] s = elements.Split(\" \");\r\n                int[] arr1 = new int[n];\r\n                arr1 = Array.ConvertAll(elements.Split(), int.Parse);\r\n                Node head = new Node(arr1[0]);\r\n                Node tail = head;\r\n                for(int i=1;i<n;i++){\r\n                    tail.next = new Node(arr1[i]);\r\n                    tail = tail.next;\r\n                }\r\n                Solution obj = new Solution();\r\n                Node res = obj.reverseList(head);\r\n                GFG.PrintList(res);\r\n                \r\n              \r\n            }\r\n\r\n        }\r\n    }\r\n}",
+                    "user_code": "//User function Template for C#\n'''\npublic class Node{\n    public int data;\n    public Node next;\n\n    public Node(int x){\n        this.data = x;\n        this.next = null;\n    }\n\n}\nclass Solution\n    {\n        //Complete this function\n        public Node reverseList(Node head)\n        {\n            //Your code here\n        }\n    }\n'''",
+                    "created_at_timestamp": 1704356628,
+                    "updated_at_timestamp": 1704356628
+                }
+            },
+            "input": "6\r\n1 2 3 4 5 6"
+        },
+        "course_default_lang": null,
+        "interview_links": [
+            "https://www.geeksforgeeks.org/vmware-interview-experience-set-2-on-campus/",
+            "https://www.geeksforgeeks.org/vmware-interview-experience-set-5-on-campus-for-it-application-developer/",
+            "https://www.geeksforgeeks.org/paytm-interview-experience-set-4-walk-in-drive/",
+            "https://www.geeksforgeeks.org/paytm-interview-experience-set-13-experienced/",
+            "https://www.geeksforgeeks.org/qualcomm-interview-set-2/",
+            "https://www.geeksforgeeks.org/qualcomm-interview-experience-set-3-bluteooth-engineer/",
+            "https://www.geeksforgeeks.org/qualcomm-interview-experience-set-4-intern-full-time-employee/",
+            "https://www.geeksforgeeks.org/qualcomm-interview-experience-set-7-off-campus/",
+            "https://www.geeksforgeeks.org/qualcomm-interview-experience-set-8-experienced/",
+            "https://www.geeksforgeeks.org/makemytrip-interview-experience/",
+            "https://www.geeksforgeeks.org/makemytrip-interview-experience-set-6-online-coding/",
+            "https://www.geeksforgeeks.org/makemytrip-interview-experience-set-11-developer-position/",
+            "https://www.geeksforgeeks.org/adobe-interview-experience-shecodes-2020-product-intern/"
+        ],
+        "user_has_access_to_doubt_assistance": false,
+        "editorial_type": "practice",
+        "associated_func_pid": null,
+        "can_view_author_solution": true,
+        "show_editorial_tab": true,
+        "is_todays_potd": false
+    },
+    {
+        "id": 700043,
+        "problem_name": "Add two numbers represented by linked lists",
+        "problem_type": 1,
+        "problem_type_text": "Function",
+        "publish": 1,
+        "publish_date": "2018-01-17 12:02:12",
+        "slug": "add-two-numbers-represented-by-linked-lists",
+        "problem_level": 1,
+        "problem_level_text": "Medium",
+        "difficulty": "Medium",
+        "marks": 4,
+        "is_sample_input_modified": 1,
+        "custom_input_format": "<p>The custom input should contain only four line. The first line contains one integer <strong>N</strong><strong>&nbsp;.</strong><strong>&nbsp;</strong>The second line contains <strong>&nbsp;</strong><strong>N&nbsp;</strong>space separated integers denoting the&nbsp;<strong>valueN&nbsp;</strong>of the first&nbsp;linked list.&nbsp; The third line contains one integer <strong>M</strong><strong>&nbsp;.</strong><strong>&nbsp;</strong>The fourth line contains <strong>&nbsp;</strong><strong>M&nbsp;</strong>space separated integers denoting the&nbsp;<strong>valueM&nbsp;</strong>of the second linked list.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n2\r\n4 5\r\n3\r\n3 4 5</pre>\r\n",
+        "multiple_testcase": 1,
+        "content_type": 1,
+        "visibility_type": 1,
+        "visibility_text": "public",
+        "is_contest_problem": 0,
+        "contest_slug": null,
+        "can_add_interview_link": false,
+        "can_edit_all_submissions_link": true,
+        "has_all_submissions_button": false,
+        "all_submissions": 227405,
+        "accuracy": "34.52%",
+        "is_user_login": 1,
+        "is_private_tag_visible": false,
+        "related_courses": {
+            "dsa-interview-preparation-classroom": "DSA for Interview Preparation",
+            "interviewe-101-data-structures-algorithm-system-design": "Tech Interview 101 - From DSA to System Design for Working Professionals",
+            "dsa-self-paced": "Data Structures and Algorithms - Self Paced",
+            "complete-interview-preparation": "Complete Interview Preparation",
+            "dsa-to-development-coding-guide": "DSA to Development: A Complete Guide"
+        },
+        "tags": {
+            "company_tags": [
+                "Flipkart",
+                "Morgan Stanley",
+                "Accolite",
+                "Amazon",
+                "Microsoft",
+                "Snapdeal",
+                "MakeMyTrip",
+                "Qualcomm"
+            ],
+            "topic_tags": [
+                "Linked List",
+                "Data Structures"
+            ]
+        },
+        "problem_question": "<p><span style=\"font-size:18px\">Given two decimal numbers represented by two linked lists of size <strong>N</strong> and <strong>M </strong>respectively. The task is to return a linked list that represents the sum of these two numbers. </span></p>\r\n\r\n<p><span style=\"font-size:18px\">For example, the number <strong>190</strong> will be represented by the linked list, <strong>1-&gt;9-&gt;0-&gt;null, </strong>similarly <strong>25 </strong>by <strong>2-&gt;5-&gt;null. </strong>Sum of these two numbers is<strong> </strong>190 + 25 =<strong> 215, </strong>which will be represented by<strong> 2-&gt;1-&gt;5-&gt;null. </strong>You are required to return the head of the linked list<strong> 2-&gt;1-&gt;5-&gt;null.</strong></span></p>\r\n\r\n<p><span style=\"font-size:18px\"><strong>Example 1:</strong></span></p>\r\n\r\n<pre>\r\n<span style=\"font-size:18px\"><strong>Input:\r\n</strong>N = 2\r\nvalueN[] = {4,5}\r\nM = 3\r\nvalueM[] = {3,4,5}\r\n<strong>Output: </strong>3 9 0&nbsp;&nbsp;<strong>\r\nExplanation: </strong>For the given two linked\r\nlist (4 5) and (3 4 5), after adding\r\nthe two linked list&nbsp;resultant linked\r\nlist will be (3&nbsp;9 0).</span></pre>\r\n\r\n<p><span style=\"font-size:18px\"><strong>Example 2:</strong></span></p>\r\n\r\n<pre>\r\n<span style=\"font-size:18px\"><strong>Input:\r\n</strong>N = 2\r\nvalueN[] = {6,3}\r\nM = 1\r\nvalueM[] = {7}\r\n<strong>Output: </strong>7 0<strong>\r\nExplanation: </strong>For the given two linked\r\nlist (6 3) and (7), after adding the\r\ntwo linked list&nbsp;resultant linked list\r\nwill be (7 0).</span></pre>\r\n\r\n<p><span style=\"font-size:18px\"><strong>Your&nbsp;Task:</strong><br />\r\nThe task is to complete the function <strong>addTwoLists</strong>() which has node reference of both the linked lists and returns the head of the sum list. &nbsp;&nbsp;</span></p>\r\n\r\n<p><span style=\"font-size:18px\"><strong>Expected Time Complexity:&nbsp;</strong>O(N+M)<br />\r\n<strong>Expected Auxiliary Space:&nbsp;</strong>O(Max(N,M)) for the resultant list.</span></p>\r\n\r\n<p><span style=\"font-size:18px\"><strong>Constraints:</strong></span><br />\r\n<span style=\"font-size:18px\">1 &lt;= N, M &lt;= 5000</span></p>\r\n",
+        "contributor": "Amit Khandelwal",
+        "test_cases": "2\r\n4 5\r\n3\r\n3 4 5",
+        "article_existence": 2,
+        "can_edit_history": false,
+        "can_edit_problem": false,
+        "can_edit_problem_read_only": false,
+        "author": "bhawnamait",
+        "has_problem_solutions": true,
+        "has_hints": true,
+        "has_editorial": true,
+        "track": "",
+        "batch": "",
+        "has_doubt_assistance": false,
+        "extra": {
+            "problem_languages": {
+                "cpp": "C++ (g++ 5.4)",
+                "java": "Java (1.8)",
+                "python3": "Python3",
+                "javascript": "Javascript (Node v12.19.0)",
+                "csharp": "C#"
+            },
+            "default_lang": "cpp",
+            "default_code": "#include\nusing namespace std;\nint main()\n {\n\t//code\n\treturn 0;\n}",
+            "initial_user_func": {
+                "cpp": {
+                    "initial_code": "// driver\r\n\r\n#include <bits/stdc++.h>\r\nusing namespace std;\r\n\r\n/* Linked list Node */\r\nstruct Node {\r\n    int data;\r\n    struct Node* next;\r\n    Node(int x) {\r\n        data = x;\r\n        next = NULL;\r\n    }\r\n};\r\n\r\nstruct Node* buildList(int size)\r\n{\r\n    int val;\r\n    cin>> val;\r\n    \r\n    Node* head = new Node(val);\r\n    Node* tail = head;\r\n    \r\n    for(int i=0; i<size-1; i++)\r\n    {\r\n        cin>> val;\r\n        tail->next = new Node(val);\r\n        tail = tail->next;\r\n    }\r\n    \r\n    return head;\r\n}\r\n\r\nvoid printList(Node* n)\r\n{\r\n    while(n)\r\n    {\r\n        cout<< n->data << \" \";\r\n        n = n->next;\r\n    }\r\n    cout<< endl;\r\n}\r\n\r\n//Position this line where user code will be pasted.\r\n\r\nint main()\r\n{\r\n    int t;\r\n    cin>>t;\r\n    while(t--)\r\n    {\r\n        int n, m;\r\n        \r\n        cin>>n;\r\n        Node* first = buildList(n);\r\n        \r\n        cin>>m;\r\n        Node* second = buildList(m);\r\n        Solution ob;\r\n        Node* res = ob.addTwoLists(first,second);\r\n        printList(res);\r\n    }\r\n    return 0;\r\n}\r\n",
+                    "user_code": "/* node for linked list:\r\n\r\nstruct Node {\r\n    int data;\r\n    struct Node* next;\r\n    Node(int x) {\r\n        data = x;\r\n        next = NULL;\r\n    }\r\n};\r\n\r\n*/\r\n\r\nclass Solution\r\n{\r\n    public:\r\n    //Function to add two numbers represented by linked list.\r\n    struct Node* addTwoLists(struct Node* first, struct Node* second)\r\n    {\r\n        // code here\r\n    }\r\n};\r\n",
+                    "created_at_timestamp": 1616395994,
+                    "updated_at_timestamp": 1693461487
+                },
+                "java": {
+                    "initial_code": "// driver\r\n\r\nimport java.util.*;\r\n\r\nclass Node {\r\n    int data;\r\n    Node next;\r\n\r\n    Node(int d) {\r\n        data = d;\r\n        next = null;\r\n    }\r\n}\r\n\r\nclass GfG{\r\n    \r\n    static void printList(Node n){\r\n        while(n!=null){\r\n            System.out.print(n.data+\" \");\r\n            n = n.next;\r\n        }\r\n        System.out.println();\r\n    }\r\n    \r\n    public static void main(String[] args) {\r\n        Scanner sc = new Scanner(System.in);\r\n        int T = sc.nextInt();\r\n        \r\n        while (T-- > 0) {\r\n            \r\n            int n = sc.nextInt();\r\n            int val = sc.nextInt();\r\n            \r\n            Node first = new Node(val);\r\n            Node tail = first;\r\n            for(int i=0; i<n-1; i++)\r\n            {\r\n                val = sc.nextInt();\r\n                tail.next = new Node(val);\r\n                tail = tail.next;\r\n            }\r\n            \r\n            int m = sc.nextInt();\r\n            val = sc.nextInt();\r\n            \r\n            Node second = new Node(val);\r\n            tail = second;\r\n            for(int i=0; i<m-1; i++)\r\n            {\r\n                val = sc.nextInt();\r\n                tail.next = new Node(val);\r\n                tail = tail.next;\r\n            }\r\n            \r\n            Solution g = new Solution();\r\n            Node res = g.addTwoLists(first, second);\r\n            printList(res);\r\n        }\r\n    }\r\n}\r\n",
+                    "user_code": "/* node for linked list\r\n\r\nclass Node {\r\n    int data;\r\n    Node next;\r\n\r\n    Node(int d) {\r\n        data = d;\r\n        next = null;\r\n    }\r\n}\r\n\r\n*/\r\n\r\nclass Solution{\r\n    //Function to add two numbers represented by linked list.\r\n    static Node addTwoLists(Node first, Node second){\r\n        // code here\r\n        // return head of sum list\r\n    }\r\n}",
+                    "created_at_timestamp": 1616395994,
+                    "updated_at_timestamp": 1693461487
+                },
+                "python3": {
+                    "initial_code": "#Initial Template for Python 3\r\n\r\n# Node Class\r\nclass Node:\r\n    def __init__(self, data):\r\n        self.data = data\r\n        self.next = None\r\n\r\n# Linked List Class\r\nclass LinkedList:\r\n    def __init__(self):\r\n        self.head = None\r\n        self.tail = None\r\n\r\n    # creates a new node with given value and appends it at the end of the linked list\r\n    def insert(self, val):\r\n        if self.head is None:\r\n            self.head = Node(val)\r\n            self.tail = self.head\r\n        else:\r\n            self.tail.next = Node(val)\r\n            self.tail = self.tail.next\r\n\r\n# prints the elements of linked list starting with head\r\ndef printList(n):\r\n    while n:\r\n        print(n.data,end=' ')\r\n        n = n.next\r\n    print()\r\n\r\nif __name__ == '__main__':\r\n    for _ in range(int(input())):\r\n        \r\n        n = int(input())\r\n        arr1 = ( int(x) for x in input().split() )\r\n        LL1 = LinkedList()\r\n        for i in arr1:\r\n            LL1.insert(i)\r\n        \r\n        m = int(input())\r\n        arr2 = ( int(x) for x in input().split() )\r\n        LL2 = LinkedList()\r\n        for i in arr2:\r\n            LL2.insert(i)\r\n        \r\n        res = Solution().addTwoLists(LL1.head, LL2.head)\r\n        printList(res)",
+                    "user_code": "#User function Template for python3\r\n\r\n''' Node for linked list:\r\n\r\nclass Node:\r\n    def __init__(self, data):\r\n        self.data = data\r\n        self.next = None\r\n\r\n'''\r\nclass Solution:\r\n    #Function to add two numbers represented by linked list.\r\n    def addTwoLists(self, first, second):\r\n        # code here\r\n        # return head of sum list",
+                    "created_at_timestamp": 1616395994,
+                    "updated_at_timestamp": 1693461487
+                },
+                "javascript": {
+                    "initial_code": "//Initial Template for javascript\r\n'use strict';\r\n\r\nprocess.stdin.resume();\r\nprocess.stdin.setEncoding('utf-8');\r\n\r\nlet inputString = '';\r\nlet currentLine = 0;\r\n\r\nprocess.stdin.on('data', inputStdin => {\r\n    inputString += inputStdin;\r\n});\r\n\r\nprocess.stdin.on('end', _ => {\r\n    inputString = inputString.trim().split('\\n').map(string => {\r\n        return string.trim();\r\n    });\r\n    \r\n    main();    \r\n});\r\n\r\nfunction readLine() {\r\n    return inputString[currentLine++];\r\n}\r\n\r\nclass Node{\r\n    constructor(data){\r\n        this.data = data;\r\n        this.next = null;\r\n    }\r\n}\r\n\r\nfunction printlist(head){\r\n    let current = head; \r\n    let s='';\r\n    while (current !== null)\r\n    {\r\n        s+=current.data+\" \";\r\n        current = current.next;\r\n    }\r\n    console.log(s);\r\n}\r\n\r\n\r\nfunction main() {\r\n    let t = parseInt(readLine());\r\n    let i = 0;\r\n    for(;i<t;i++)\r\n    {\r\n        let n = parseInt(readLine());\r\n        let input_ar1 = readLine().split(' ').map(x=>parseInt(x));\r\n        let first = new Node(input_ar1[0]);\r\n        let tail1 = first;\r\n        for(let i=1;i<n;i++){\r\n            tail1.next = new Node(input_ar1[i]);\r\n            tail1 = tail1.next;\r\n        }\r\n        \r\n        let m = parseInt(readLine());\r\n        let input_ar2 = readLine().split(' ').map(x=>parseInt(x));\r\n        let second = new Node(input_ar2[0]);\r\n        let tail2 = second;\r\n        for(let i=1;i<m;i++){\r\n            tail2.next = new Node(input_ar2[i]);\r\n            tail2 = tail2.next;\r\n        }\r\n        \r\n        let obj = new Solution();\r\n        let res = obj.addTwoLists(first, second);\r\n        printlist(res);\r\n    }\r\n}",
+                    "user_code": "//User function Template for javascript\r\n\r\n/**\r\n * @param {Node} first\r\n * @param {Node} second\r\n * @returns {Node}\r\n*/\r\n\r\n/*\r\nclass Node{\r\n    constructor(data){\r\n        this.data = data;\r\n        this.next = null;\r\n    }\r\n}\r\n*/\r\n\r\nclass Solution {\r\n    //Function to add two numbers represented by linked list.\r\n    addTwoLists(first, second)\r\n    {\r\n        //your code here\r\n    }\r\n}",
+                    "created_at_timestamp": 1616395994,
+                    "updated_at_timestamp": 1693461487
+                },
+                "csharp": {
+                    "initial_code": "//Initial Template for C#\r\n\r\n\r\nusing System;\r\nusing System.Collections.Generic;\r\nusing System.Linq;\r\nusing System.Text;\r\nusing System.Threading.Tasks;\r\nusing DriverCode;\r\n\r\nnamespace DriverCode\r\n{\r\n    public class Node{\r\n        public int data;\r\n        public Node next;\r\n    \r\n        public Node(int a){\r\n            this.data = a;\r\n            this.next = null;\r\n        }\r\n    \r\n    }\r\n    \r\n\r\n    class GFG\r\n    {\r\n        static void printList( Node head){\r\n            while(head!=null){\r\n                Console.Write(head.data+\" \");\r\n                head = head.next;\r\n            }\r\n            Console.Write(\"\\n\");\r\n        }\r\n        static void Main(string[] args)\r\n        {\r\n            int testcases;// Taking testcase as input\r\n            testcases = Convert.ToInt32(Console.ReadLine());\r\n            while (testcases-- > 0)// Looping through all testcases\r\n            {\r\n                string[] elements = Console.ReadLine().Trim().Split(' ');\r\n                int n = int.Parse(elements[0]);\r\n                elements = Console.ReadLine().Trim().Split(' ');\r\n                int[] arr = new int[n];\r\n                arr = Array.ConvertAll(elements, int.Parse);\r\n                \r\n                Node head = new Node(arr[0]);\r\n                Node tail = head;\r\n                \r\n                for(int i=1;i<n;i++){\r\n                    tail.next = new Node(arr[i]);\r\n                    tail = tail.next;\r\n                }\r\n                \r\n                elements = Console.ReadLine().Trim().Split(' ');\r\n                int n1 = int.Parse(elements[0]);\r\n                elements = Console.ReadLine().Trim().Split(' ');\r\n                int[] arr1 = new int[n1];\r\n                arr1 = Array.ConvertAll(elements, int.Parse);\r\n                \r\n                Node head1 = new Node(arr1[0]);\r\n                Node tail1 = head1;\r\n                \r\n                for(int i=1;i<n1;i++){\r\n                    tail1.next = new Node(arr1[i]);\r\n                    tail1 = tail1.next;\r\n                }\r\n                Solution obj = new Solution();\r\n                Node res = obj.addTwoLists(head, head1);\r\n                printList(res);\r\n          }\r\n\r\n        }\r\n    }\r\n}",
+                    "user_code": "//User function Template for C#\n\npublic class Node{\n    public int data;\n    public Node next;\n\n    public Node(int a){\n        this.data = a;\n        this.next = null;\n    }\n\n}\n\npublic class Solution\n    {\n        //Complete this function\n        public Node addTwoLists(Node first, Node second)\n        {\n            //Your code here\n        }\n    }",
+                    "created_at_timestamp": 1704356628,
+                    "updated_at_timestamp": 1704356628
+                }
+            },
+            "input": "2\r\n4 5\r\n3\r\n3 4 5"
+        },
+        "course_default_lang": null,
+        "interview_links": [
+            "https://www.geeksforgeeks.org/accolite-interview-experience-set-7-on-campus/",
+            "httpss://www.geeksforgeeks.org/amazon-interview-experience-set-413-sdet-1-campus-internship/"
+        ],
+        "user_has_access_to_doubt_assistance": false,
+        "editorial_type": "practice",
+        "associated_func_pid": null,
+        "can_view_author_solution": true,
+        "show_editorial_tab": true,
+        "is_todays_potd": false
+    }
+]
