@@ -36,23 +36,18 @@ const questionSchema = new mongoose.Schema({
     },
     cpp: {
         type: String,
-        required: true
+        
     },
     java: {
         type: String,
-        required: true
+        
     },
     python: {
         type: String,
-        required: true
+        
     },
     ctags: {
         type: [String],
-        required: true,
-        validate: {
-            validator: (value) => value.length > 0,
-            message: 'At least one company tag is required'
-        }
     },
     topics: {
         type: [String],
